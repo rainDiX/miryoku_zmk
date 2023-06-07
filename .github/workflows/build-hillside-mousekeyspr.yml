@@ -11,6 +11,5 @@ jobs:
       board: '["nice_nano_v2"]'
       shield: '["hillside46_left","hillside46_right"]'
       nav: '["invertedT"]'
-      custom_config: '["#define MIRYOKU_KLUDGE_MOUSEKEYSPR"]'
       kconfig: '["CONFIG_ZMK_MOUSE=y\nCONFIG_ZMK_KSCAN_DEBOUNCE_PRESS_MS=6\nCONFIG_ZMK_KSCAN_DEBOUNCE_RELEASE_MS=6\nCONFIG_ZMK_HID_REPORT_TYPE_NKRO=y"]'
       branches: '["urob/zmk/mouse-3.2"]'
