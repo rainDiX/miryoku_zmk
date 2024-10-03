@@ -1,7 +1,7 @@
 # Copyright 2022 Manna Harbour
 # https://github.com/manna-harbour/miryoku
 
-name: "Build Hillside Zephyr 3.2 mousekeyspr"
+name: "Build Hillside mousekeyspr"
 on: workflow_dispatch
 jobs:
   build:
@@ -11,5 +11,5 @@ jobs:
       board: '["nice_nano_v2"]'
       shield: '["hillside46_left","hillside46_right"]'
       nav: '["invertedT"]'
-      kconfig: '["CONFIG_ZMK_KSCAN_DEBOUNCE_PRESS_MS=8\nCONFIG_ZMK_KSCAN_DEBOUNCE_RELEASE_MS=8\nCONFIG_ZMK_HID_REPORT_TYPE_NKRO=y\nCONFIG_ZMK_SPLIT_BLE_CENTRAL_BATTERY_LEVEL_FETCHING=y\nCONFIG_ZMK_SPLIT_BLE_CENTRAL_BATTERY_LEVEL_PROXY=y"]'
-      branches: '["zmkfirmware/zmk/main caksoylar/zmk/feat/mouse-keys-3.2"]'
+      kconfig: '["CONFIG_ZMK_MOUSE=y\nCONFIG_ZMK_KSCAN_DEBOUNCE_PRESS_MS=8\nCONFIG_ZMK_KSCAN_DEBOUNCE_RELEASE_MS=8\nCONFIG_ZMK_HID_REPORT_TYPE_NKRO=y\nCONFIG_ZMK_SPLIT_BLE_CENTRAL_BATTERY_LEVEL_FETCHING=y\nCONFIG_ZMK_SPLIT_BLE_CENTRAL_BATTERY_LEVEL_PROXY=y"]'
+      branches: '["petejohanson/zmk/feat/pointers-move-scroll"]'
